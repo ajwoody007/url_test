@@ -11,7 +11,7 @@ class tfli_mdl {
 
     public function create_database_db():void {
 
-        $db = new PDO('sqlite:/opt/lampp/htdocs/tfli/database/tfli.db');
+        $db = new PDO('sqlite:database/tfli.db');
         $create_table = "CREATE TABLE IF NOT EXISTS short_urls (
                 url_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 url_title TEXT NULL,
@@ -44,7 +44,7 @@ class tfli_mdl {
 
         }
 
-        $db = new PDO('sqlite:/opt/lampp/htdocs/tfli/database/tfli.db');
+        $db = new PDO('sqlite:database/tfli.db');
 
         $query = $db->prepare('
             INSERT INTO short_urls (url_title, url_add, url_expiry, url_short) 
@@ -64,7 +64,7 @@ class tfli_mdl {
 
     public function get_short_urls_db() {
 
-        $db = new PDO('sqlite:/opt/lampp/htdocs/tfli/database/tfli.db');
+        $db = new PDO('sqlite:database/tfli.db');
         $get_data = "SELECT *, strftime('%d/%m/%Y %H:%M', url_expiry) AS url_expiry_date FROM short_urls ORDER BY url_expiry DESC;";
         $exec_cmd = $db->query($get_data);
         $result = $exec_cmd->fetchAll(PDO::FETCH_ASSOC);
@@ -77,7 +77,7 @@ class tfli_mdl {
         date_default_timezone_set('Europe/London');
         $expiry_time = new DateTime();
 
-        $db = new PDO('sqlite:/opt/lampp/htdocs/tfli/database/tfli.db');
+        $db = new PDO('sqlite:database/tfli.db');
         $get_data = "SELECT url_add FROM short_urls 
                     WHERE url_short = '" . $short_url . "' 
                     AND (url_expiry >= '" . $expiry_time->format('Y-m-d H:i') . "' OR url_expiry = '');";
