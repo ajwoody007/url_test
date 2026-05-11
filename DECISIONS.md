@@ -9,20 +9,20 @@
     The main pages all start with the prefix "tfli". Pages that don't are instrumental or "background" pages.
 
 **VIEW**                   
-    tfli_main
-    check_url.php is used as a view to get the short code from the url and check it. Although it is a view file, it redirects before the user sees it.
-    404.php is the pretty "page not found" view page.
+- tfli_main
+- check_url.php is used as a view to get the short code from the url and check it. Although it is a view file, it redirects before the user sees it.
+- 404.php is the pretty "page not found" view page.
 
 **CONTROLLERS**
-    tfli.js
-    tfli_ajax
-    tfli_ctl            
+- tfli.js
+- tfli_ajax
+- tfli_ctl            
     
 **MODELS**
-    tfli_mdl
+- tfli_mdl
     
 **DATABASE**
-    /database/tfli.db
+- /database/tfli.db
     
 # Design Rationale
 
