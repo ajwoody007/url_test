@@ -18,16 +18,13 @@
     
 # Design Rationale
 
-
     I decided on a simple, two colour design which should be easy on the eye.
 
 
 # Assistant Sources
 
-
     I'm a little rusty on Tailwind, so I used the official Tailwind document pages https://tailwindcss.com/docs/ to remind myself of certain aspects (centering, mainly)
     I used the PHP document pages to get the exact syntax for date conversion (https://www.php.net/docs.php)
-
 
 # Alternative Approaches
 
@@ -45,4 +42,15 @@
         - for the creation of the short url, I used an inbuilt php function, but would probably do this a different way
         - on app launch, check (and maybe set) the permissions of the database folder
 
+# Installation Instructions
+
+    Make sure the files are stored on a machine running XAMPP/LAMPP and is in a subfolder of /htdocs.
+    One first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
+        It needs full access (chmod 777 database).
+    The app is available from the following sources:
+        - sent as a zip file direct to TFLI
+        - as a clonable git-repo [https://github.com/ajwoody007/url_test/]
+        - as a fully working app (for demo purposes) at [https://www.andywood.net/tfli/]
+
+        
         
