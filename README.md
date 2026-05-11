@@ -45,7 +45,7 @@ tfli_main.php is the main launcher and this :
 I have thoroughly tested the app in both a local environment and also on the internet and while I am confident it works, the following problems may prevent smooth running:
 
 - I found the .htaccess file to be extremely "sticky". I made a change and it wasn't picked up immediately (CTRL-F5 seemed to have no effect).
-- When the DB is created, at the early stages it was created readonly so the 'create table' instruction then failed. I resolved this by creating it's own folder
+- When the DB is created, at the early stages it was created readonly so the 'create table' instruction then failed. I resolved this by creating it's own folder with full RW access
 - PHP is "flexible" when it comes to the locale and the date/time should be in the UK format. Global settings may override this and so the date may not be formatted correctly. I got round this by specifying Europe/London each time I calculated/used/converted dates.
 
  
