@@ -36,29 +36,29 @@
 
 # Alternative Approaches
 
-    Given more time I would:
-        - create a .env file to contain the databse settings
-        - installed tailwind and used without a CDN
-        - enhance the data validation in JS, for example added pattern matching for the give long url
-        - styled the messages presented to the user rather than used "alert"
-        - made the list of prevously created short codes a bit prettier and removed the long url (I only displayed it for checking purposes)
-        - performed the long url check before inserting into the db, so it doesn't store an invalid web address
-        - performed a check to see if a short code already exists for a url in the db, then either:
-            - informed the user for them to decide whether to create a new one or update/overwrite the existing one
-        - involved "private" classes in the db to enhance security
-        - created a login page and stored the user id with the record, so each user has their own set of url short codes
-        - for the creation of the short url, I used an inbuilt php function, but would probably do this a different way
-        - on app launch, check (and maybe set) the permissions of the database folder
+Given more time I would:
+- create a .env file to contain the databse settings
+- installed tailwind and used without a CDN
+- enhance the data validation in JS, for example added pattern matching for the give long url
+- styled the messages presented to the user rather than used "alert"
+- made the list of prevously created short codes a bit prettier and removed the long url (I only displayed it for checking purposes)
+- performed the long url check before inserting into the db, so it doesn't store an invalid web address
+- performed a check to see if a short code already exists for a url in the db, then either:
+    - informed the user for them to decide whether to create a new one or update/overwrite the existing one
+- involved "private" classes in the db to enhance security
+- created a login page and stored the user id with the record, so each user has their own set of url short codes
+- for the creation of the short url, I used an inbuilt php function, but would probably do this a different way
+- on app launch, check (and maybe set) the permissions of the database folder
 
 # Installation Instructions
 
-    Make sure the files are stored on a machine running XAMPP/LAMPP and is in a subfolder of /htdocs.
-    One first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
-        It needs full access (chmod 777 database).
-    The app is available from the following sources:
-        - sent as a zip file direct to TFLI
-        - as a clonable git-repo (https://github.com/ajwoody007/url_test/)
-        - as a fully working app, for demo purposes at (https://www.andywood.net/tfli/)
+- Make sure the files are stored on a machine running XAMPP/LAMPP and is in a subfolder of /htdocs.
+- One first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
+    It needs full access (chmod 777 database).
+- The app is available from the following sources:
+    - sent as a zip file direct to TFLI
+    - as a clonable git-repo (https://github.com/ajwoody007/url_test/)
+    - as a fully working app, for demo purposes at (https://www.andywood.net/tfli/)
 
 
         
