@@ -57,7 +57,7 @@
     The app is available from the following sources:
         - sent as a zip file direct to TFLI
         - as a clonable git-repo (https://github.com/ajwoody007/url_test/)
-        - as a fully working app (for demo purposes) at (https://www.andywood.net/tfli/)
+        - as a fully working app, for demo purposes at (https://www.andywood.net/tfli/)
 
 
         
