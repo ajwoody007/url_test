@@ -1,18 +1,16 @@
-/* ******************************************** */
-/* Read me file for the TFLI technical test     */
-/* Written by Andy Wood Thursday 7th May        */
-/* ******************************************** */
+>
+> Read me file for the TFLI technical test
+> Written by Andy Wood Thursday 7th May
+>
 
 To install and run:
     Pull/download from github ()
     Place into the localhost environment of php as a subfolder of htdocs
     load /tfli/index.html - this will call index.php which will launch the app
 
-How the app works:
-==================
+# How the app works:
 
-    1. Creating a short code
-    ------------------------
+    ## 1. Creating a short code
     
         tfli_main.php is the main launcher and this :
         - creates a db if there isn't one and then creates the main table
@@ -26,8 +24,7 @@ How the app works:
             - adds all the data to the database 
         - reloads the main page, now showing all the short_urls created (reverse order by expiry date, latest first)
 
-    2. Using a short code
-    ---------------------
+    ## 2. Using a short code
 
         - From the list of shorts codes at the bottom of the tfli_main.php page, copy a short code (or make a note of it)
         - in the URL, if index.php is shown, remove it and replace it with the short code (e.g ... /tfli/fhd57e4) and press enter
@@ -41,8 +38,7 @@ How the app works:
             - the website to which it points is a valid website
             - the expiry date is either not set or is set and has not yet been reached
 
-Diagnosing problems
-===================
+    # Diagnosing problems
 
     I have thoroughly tested the app in both a local environment and also on the internet and while I am confident it works, the following problems may prevent smooth running:
 
