@@ -33,7 +33,7 @@
 
 1. I'm a little rusty on Tailwind, so I used the official Tailwind document pages https://tailwindcss.com/docs/ to remind myself of certain aspects (centering, mainly)
 2. I used the PHP document pages to get the exact syntax for date conversion (https://www.php.net/docs.php)
-3. I was initially unfamiliar with SQLITE, but found it very similar to Oracle's SQL*PLUS so the learning curve for that was not very steep.
+3. I was initially unfamiliar with SQLITE, but found it very similar to Oracle's SQL*PLUS so the learning curve for that was not very steep (https://sqlite.org/docs.html).
 
 # Alternative Approaches
 
