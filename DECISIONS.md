@@ -16,7 +16,6 @@
     check_url is used as a view to get the short code from the url and check it. Although it is a view file, it redirects before the user sees it.
     404.php is the pretty "page not found" view page.
     
-
 # Design Rationale
 
 
