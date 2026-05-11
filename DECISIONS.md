@@ -1,10 +1,10 @@
-/* ******************************************** */
-/* Decisions file for the TFLI technical test   */
-/* Written by Andy Wood Thursday 7th May        */
-/* ******************************************** */
+>
+> Decisions file for the TFLI technical test   
+> Written by Andy Wood Thursday 7th May        
+> 
 
-Environment Rationale
-=====================
+# Environment Rationale
+
 
     The app is MVC and in some cases OOP. Rather than split in into various folders as usual, I kept everything in one folder (except the DB)
     The main pages all start with the prefix "tfli". Pages that don't are instrumental or "background" pages.
@@ -18,21 +18,21 @@ Environment Rationale
     404.php is the pretty "page not found" view page.
     
 
-Design Rationale
-================
+# Design Rationale
+
 
     I decided on a simple, two colour design which should be easy on the eye.
 
 
-Assistant Sources
-=================
+# Assistant Sources
+
 
     I'm a little rusty on Tailwind, so I used the official Tailwind document pages https://tailwindcss.com/docs/ to remind myself of certain aspects (centering, mainly)
     I used the PHP document pages to get the exact syntax for date conversion (https://www.php.net/docs.php)
 
 
-Alternative Approaches
-======================
+# Alternative Approaches
+
 
     Given more time I would:
         - create a .env file to contain the databse settings
@@ -41,10 +41,11 @@ Alternative Approaches
         - styled the messages presented to the user rather than used "alert"
         - made the list of prevously created short codes a bit prettier and removed the long url (I only displayed it for checking purposes)
         - performed the long url check before inserting into the db, so it doesn't store an invalid web address
-        - performed a check to see if a short code already exists for a url, then either:
-            - informed the user for them to decide whether to create a new one or update existing
+        - performed a check to see if a short code already exists for a url in the db, then either:
+            - informed the user for them to decide whether to create a new one or update/overwrite the existing one
         - involved "private" classes in the db to enhance security
         - created a login page and stored the user id with the record, so each user has their own set of url short codes
         - for the creation of the short url, I used an inbuilt php function, but would probably do this a different way
+        - on app launch, check (and maybe set) the permissions of the database folder
 
         
