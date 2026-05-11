@@ -3,14 +3,14 @@
 > Written by Andy Wood Thursday 7th May
 >
 
-To install and run:
+# To install and run:
     Pull/download from github ()
     Place into the localhost environment of php as a subfolder of htdocs
     load /tfli/index.html - this will call index.php which will launch the app
 
 # How the app works:
 
-    ## 1. Creating a short code
+## Creating a short code
     
         tfli_main.php is the main launcher and this :
         - creates a db if there isn't one and then creates the main table
