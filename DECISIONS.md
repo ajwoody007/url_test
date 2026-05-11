@@ -8,7 +8,7 @@
     The app is MVC and in some cases OOP. Rather than split in into various folders as usual, I kept everything in one folder (except the DB)
     The main pages all start with the prefix "tfli". Pages that don't are instrumental or "background" pages.
 
-    **VIEW**        **CONTROLLERS**     **MODELS**      **DATABASE**
+    **VIEW**        __CONTROLLERS__     **MODELS**      **DATABASE**
     tfli_main       tfli.js
                     tfli_ajax
                     tfli_ctl            tfli_mdl        /database/tfli.db
