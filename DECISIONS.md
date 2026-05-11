@@ -32,7 +32,6 @@
 
 # Alternative Approaches
 
-
     Given more time I would:
         - create a .env file to contain the databse settings
         - installed tailwind and used without a CDN
