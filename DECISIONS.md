@@ -8,18 +8,27 @@
     The app is MVC and in some cases OOP. Rather than split in into various folders as usual, I kept everything in one folder (except the DB)
     The main pages all start with the prefix "tfli". Pages that don't are instrumental or "background" pages.
 
-    **VIEW**        __CONTROLLERS__     **MODELS**      **DATABASE**
-    tfli_main       tfli.js
-                    tfli_ajax
-                    tfli_ctl            tfli_mdl        /database/tfli.db
-
-    check_url is used as a view to get the short code from the url and check it. Although it is a view file, it redirects before the user sees it.
+**VIEW**                   
+    tfli_main
+    check_url.php is used as a view to get the short code from the url and check it. Although it is a view file, it redirects before the user sees it.
     404.php is the pretty "page not found" view page.
+
+**CONTROLLERS**
+    tfli.js
+    tfli_ajax
+    tfli_ctl            
+    
+**MODELS**
+    tfli_mdl
+    
+**DATABASE**
+    /database/tfli.db
+
+
     
 # Design Rationale
 
     I decided on a simple, two colour design which should be easy on the eye.
-
 
 # Assistant Sources
 
@@ -52,5 +61,5 @@
         - as a clonable git-repo [https://github.com/ajwoody007/url_test/]
         - as a fully working app (for demo purposes) at [https://www.andywood.net/tfli/]
 
-        
+
         

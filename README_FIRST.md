@@ -4,9 +4,11 @@
 >
 
 # To install and run:
-    Pull/download from github ()
-    Place into the localhost environment of php as a subfolder of htdocs
-    load /tfli/index.html - this will call index.php which will launch the app
+    
+1. Pull/download from github (https://github.com/ajwoody007/url_test/)
+2. Place into the localhost environment of php as a subfolder of htdocs
+3. Make sure the *database* subfolder has full 'rw' permissions
+4. Load /tfli/index.html - this will call index.php which will launch the app
 
 # How the app works:
 
