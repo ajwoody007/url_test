@@ -53,7 +53,7 @@ Given more time I would:
 # Installation Instructions
 
 - Make sure the files are stored on a machine running XAMPP/LAMPP and is in a subfolder of /htdocs.
-- One first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
+- On first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
     It needs full access (chmod 777 database).
 - The app is available from the following sources:
     - sent as a zip file direct to TFLI
