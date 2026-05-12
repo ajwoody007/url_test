@@ -49,13 +49,10 @@ Given more time I would:
 - involved "private" classes in the db to enhance security
 - created a login page and stored the user id with the record, so each user has their own set of url short codes
 - for the creation of the short url, I used an inbuilt php function, but would probably do this a different way
-- on app launch, check (and maybe set) the permissions of the database folder
 
 # Installation Instructions
 
 - Make sure the files are stored on a machine running XAMPP/LAMPP and is in a subfolder of /htdocs.
-- On first install, if running on Linux/Max, the permissions of the /database/ subfolder will need to be changed.
-    It needs full access (chmod 777 database).
 - The app is available from the following sources:
     - sent as a zip file direct to TFLI
     - as a clonable git-repo (https://github.com/ajwoody007/url_test/)
