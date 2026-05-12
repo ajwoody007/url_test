@@ -2,7 +2,7 @@
 
 
     // turn off before submitting to tfli
-    // ini_set('display_errors', 1);
+    ini_set('display_errors', 1);
     // error_reporting(E_ALL);
 
 /* this is the front end "model" class file */
@@ -10,6 +10,16 @@
 class tfli_mdl {
 
     public function create_database_db():void {
+
+        // I decided to send the app without a db or db folder, so the first thing it must
+        // do is to create them both. It does this on every run (like a framework does)
+        // if the folder or file exists, this commands are ignored
+
+        $success = exec("ls -l database");
+        if (!$success) {
+            exec("mkdir database");
+            exec("chmod database 0777"   );
+        }
 
         $db = new PDO('sqlite:database/tfli.db');
         $create_table = "CREATE TABLE IF NOT EXISTS short_urls (
